@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: rgb(33, 34, 34);
+    display: grid;
+    grid-template-areas: 'header content footer'
+                         'header content footer'
+                         'header content footer';
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 1fr 10fr 1fr;
+}
+
+header {
+    background-color: rgb(165, 165, 165);
+    grid-area: header;
+}
+
+content {
+    background-color: rgb(165, 105, 105);
+    grid-area: content;
+}
+
+footer {
+    background-color: rgb(226, 228, 137);
+    grid-area: footer;
+}
