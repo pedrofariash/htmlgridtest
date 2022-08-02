@@ -16,8 +16,9 @@ body {
     grid-template-areas: 'header header header'
                          'content1 content2 content3'
                          'footer footer footer';
-    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr 10fr 1fr;
+    gap: 5px;
 }
 
 header {
