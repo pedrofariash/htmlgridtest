@@ -10,26 +10,44 @@ html, body {
 }
 
 body {
-    background-color: rgb(33, 34, 34);
+    background-color: #19151c;
+    color: #bbb6bf;
     display: grid;
-    grid-template-areas: 'header content footer'
-                         'header content footer'
-                         'header content footer';
+    grid-template-areas: 'header header header'
+                         'content1 content2 content3'
+                         'footer footer footer';
     grid-template-columns: 1fr 10fr 1fr;
     grid-template-rows: 1fr 10fr 1fr;
 }
 
 header {
-    background-color: rgb(165, 165, 165);
     grid-area: header;
 }
 
-content {
-    background-color: rgb(165, 105, 105);
-    grid-area: content;
+.header-div {
+    background-color: #221d26;
+    padding: 15px 25px;
+    font-size: large;
+    color: #bbb6bf;
+}
+
+.content1 {
+    background-color: transparent;
+    padding: 20px;
+    grid-area: content1;
+}
+.content2 {
+    background-color: #221d26;
+    padding: 20px;
+    grid-area: content2;
+}
+.content3 {
+    background-color: transparent;
+    padding: 20px;
+    grid-area: content3;
 }
 
 footer {
-    background-color: rgb(226, 228, 137);
+    background-color: #221d26;
     grid-area: footer;
 }
